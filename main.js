@@ -55,6 +55,12 @@ const myGame = new Game({
       player.setCollideWorldBounds(true);
       water = this.physics.add.staticGroup();
 
+      this.add.text(145, 3, "Jingle Dash: Present Persuit!", {
+        fontFamily: "Arial",
+        color: "white",
+        fontSize: 35,
+      });
+
       platforms = this.physics.add.staticGroup();
       platforms
         .create(80, 275, "leftPlatform")
